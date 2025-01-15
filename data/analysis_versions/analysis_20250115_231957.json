@@ -1,0 +1,14 @@
+{
+  "text": "# Interview Analyse Rapport\n\n## Metadata\n- Subject: Erik\n- Aantal statements: 20\n- Confidence range: 0.70 - 1.00\n\n## Forces of Progress Analyse\n\n### Push (Wegduwen van huidige situatie)\n- Erik gebruikt vergelijkingssites zoals gaslicht.com, wat suggereert dat hij actief zoekt naar betere opties\n- Hij heeft behoefte aan controle over energieverbruik, wat blijkt uit zijn positieve houding tegenover de P1-meter\n- Zoekt naar zekerheid en transparantie in energiekosten\n\n### Pull (Aantrekking naar nieuwe situatie)\n- Positieve houding tegenover ledenvoordelen en bonussen\n- Waardeert de mogelijkheid om stroomkosten een dag vooruit te kunnen inzien\n- Voelt zich aangetrokken tot eerlijke en transparante kostenverdelingen (50/50 basis)\n- Interesse in specifieke voordelen zoals kostvrije dagen en bespaarhulpjes\n\n### Anxiety (Zorgen/twijfels)\n- Mogelijke zorgen over authenticiteit bij aanbevelingsbonussen (echter expliciet weggenomen volgens statements)\n- Impliciete zorg over eerlijkheid tussen leden en niet-leden\n\n### Habits (Gewoontes/verankering)\n- Actief gebruik van 23 zonnepanelen en hybride warmtepomp\n- Regelmatig gebruik van vergelijkingssites\n- Deelt ervaringen en aanbevelingen met vrienden\n- Gebruikt actief de P1-meter voor meer controle\n\n## Conclusies\n1. Erik is een technisch georiënteerde gebruiker die actief bezig is met energiebeheer\n2. Hij waardeert transparantie en eerlijkheid sterk in energiediensten\n3. Zijn push/pull factoren zijn voornamelijk gericht op controle en financieel voordeel\n4. Er zijn relatief weinig anxiety factoren, wat suggereert dat hij een overtuigde gebruiker is\n5. Zijn habits laten zien dat hij een actieve en betrokken energieconsument is\n\n## Aanbevelingen\n1. Focus op transparante communicatie over voordelen\n2. Maak aanbevelingsprogramma's goed zichtbaar\n3. Blijf inzetten op technische features zoals de P1-meter\n4. Behoud de focus op eerlijke verdeling van voordelen\n5. Versterk het community aspect gezien zijn bereidheid tot delen met anderen",
+  "questions": [
+    "Wat is erik?"
+  ],
+  "metadata": {
+    "version_type": "ai_chat",
+    "prompt": "Kan je een uitgebreide analyse maken van de forces of progress?",
+    "interviews_analyzed": 1,
+    "statements_analyzed": 18
+  },
+  "timestamp": "2025-01-15T23:19:57.529823",
+  "version_type": "ai_chat"
+}

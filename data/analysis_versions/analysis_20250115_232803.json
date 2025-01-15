@@ -1,0 +1,14 @@
+{
+  "text": "# Interview Analyse Rapport\n\n## Metadata\n- Onderwerp: Wat is Erik?\n- Aantal statements: 20\n- Gemiddelde confidence score: 0.87\n\n## Samenvatting\nUit de analyse blijkt dat Erik een energiebewuste consument is die positief staat tegenover zijn energieleverancier en actief betrokken is bij energiebeheer en aanbevelingen.\n\n## Kernbevindingen\n\n### Technische Setup\n- Gebruikt 23 zonnepanelen en een hybride warmtepomp\n- Maakt gebruik van een P1-meter voor energiemonitoring\n\n### Attitudes & Gevoelens\n- Voelt zich tevreden over inzicht in stroomkosten\n- Ervaart meer controle door P1-meter gebruik\n- Is positief over ledenvoordelen\n- Voelt zich comfortabel bij aanbevelingsbonussen\n\n### Gedrag\n- Vergelijkt actief via gaslicht.com\n- Doet aanbevelingen aan vrienden\n- Is actief met Streamlit\n\n### Overtuigingen\n- Vindt de app en kostenverdeling duidelijk\n- Gelooft in eerlijke verdeling van voordelen (50/50)\n- Denkt dat niet-leden begrip hebben voor ledenvoordelen\n- Ziet geen conflict tussen bonussen en authenticiteit\n\n## Discussie & Onzekerheden\n\n### Betrouwbaarheid van de Data\n1. Verschillende confidence scores (0.70-1.00) suggereren variatie in betrouwbaarheid\n2. Laagste confidence scores (0.70) bij statements over:\n   - Bevestiging keuze energieleverancier\n   - Gevoel bij 'gratis stroom' mailing\n\n### Onduidelijkheden\n1. Geen informatie over:\n   - Hoe lang Erik al klant is\n   - Exacte energieverbruik/opwekking\n   - Financiële aspecten van zijn keuzes\n\n### Mogelijke Bias\n1. Statements lijken overwegend positief\n2. Mogelijk sociaal wenselijke antwoorden bij vragen over aanbevelingen\n3. Beperkte context over negatieve ervaringen of verbeterpunten\n\n### Kennishiaten\n1. Ontbrekende informatie over:\n   - Vergelijking met andere energieleveranciers\n   - Concrete besparingen\n   - Specifieke gebruikerservaringen met de app\n\nDeze discussie toont aan dat hoewel we een goed beeld krijgen van Erik's attitudes en gedrag, er nog verschillende onzekerheden en kennishiaten zijn die aanvullend onderzoek kunnen rechtvaardigen.",
+  "questions": [
+    "Wat is erik?"
+  ],
+  "metadata": {
+    "version_type": "ai_chat",
+    "prompt": "Geef een discussie aan het einde van de analyse, daarin beschrijf je de twijfels of onzekerheden",
+    "interviews_analyzed": 1,
+    "statements_analyzed": 18
+  },
+  "timestamp": "2025-01-15T23:28:03.641881",
+  "version_type": "ai_chat"
+}

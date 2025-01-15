@@ -1,0 +1,14 @@
+{
+  "text": "# Interview Analyse Rapport\n\n## Metadata\n- Datum analyse: [huidige datum]\n- Aantal statements: 20\n- Confidence range: 0.70 - 1.00\n\n## Motivaties\n\n### Primaire motivaties\n1. Controle en inzicht\n- Voelt meer controle door gebruik van P1-meter\n- Waardeert het kunnen inzien van stroomkosten een dag vooruit\n- Vindt het overzicht eerlijk en transparant\n\n2. Duurzaamheid en technologie\n- Gebruikt 23 zonnepanelen\n- Heeft een hybride warmtepomp geïnstalleerd\n\n3. Financiële voordelen\n- Positief over ledenvoordelen\n- Geïnteresseerd in bonussen zoals kostvrije dagen\n- Vergelijkt actief via gaslicht.com\n\n### Secundaire motivaties\n- Waardeert eerlijke verdeling van voordelen (50/50 basis)\n- Voelt zich comfortabel bij aanbevelingsbonussen\n- Positieve houding tegenover 'gratis stroom' mailing\n\n## Drempels\n\n### Minimale drempels\n- Geen significante drempels genoemd in de statements\n- App en kostenverdeling worden als duidelijk ervaren\n- Voelt zich comfortabel bij het concept van bonussen en aanbevelingen\n\n### Potentiële zorgen\n- Suggereert dat aanbevelingsprogramma goed zichtbaar moet zijn\n- Denkt dat sommige mensen meer zekerheid willen (vaste contracten)\n\n## Discussie\nEr zijn enkele onzekerheden in deze analyse:\n1. Hoewel Erik positief is over bonussen en voordelen, is de exacte waarde die hij hieraan hecht onduidelijk\n2. De statements geven geen inzicht in eventuele negatieve ervaringen\n3. De context van sommige uitspraken (zoals de 'gratis stroom' mailing) is beperkt\n4. We weten niet of de genoemde motivaties doorslaggevend zijn voor zijn keuzes\n5. De relatieve belangrijkheid van de verschillende motivaties is niet volledig duidelijk\n\nDe analyse toont overwegend positieve ervaringen en weinig expliciete drempels, wat mogelijk duidt op een selectieve verzameling van statements of een focus op positieve aspecten tijdens het interview.",
+  "questions": [
+    "Wat is erik?"
+  ],
+  "metadata": {
+    "version_type": "ai_chat",
+    "prompt": "Maak een analyse van de motivaties en drempels",
+    "interviews_analyzed": 1,
+    "statements_analyzed": 18
+  },
+  "timestamp": "2025-01-15T23:33:39.899811",
+  "version_type": "ai_chat"
+}
