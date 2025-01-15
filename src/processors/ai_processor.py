@@ -3,8 +3,8 @@ import anthropic
 from ..models import Statement, StatementType, Interview
 from ..config import ANTHROPIC_API_KEY, AI_MODEL
 
-# Initialize Anthropic client
-client = anthropic.Anthropic()
+# Initialize Anthropic client with explicit API key
+client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
 
 def analyze_text_segment(text: str, interviewee: str) -> List[Statement]:
     """Analyze a segment of text using Claude to extract statements."""
