@@ -12,6 +12,7 @@ def analyze_text_segment(text: str, interviewee: str) -> List[Statement]:
     try:
         print(f"\n=== Analyzing text segment for {interviewee} ===")
         print(f"Text length: {len(text)}")
+        print(f"First 100 chars of text: {text[:100]}")  # Debug: Show start of text
         
         response = client.messages.create(
             model="claude-3-5-sonnet-20241022",
@@ -75,6 +76,10 @@ Interview segment met {interviewee}:
         )
         
         print("\n=== AI Response ===")
+        print(f"Raw response type: {type(response)}")  # Debug: Show response type
+        print(f"Response content type: {type(response.content)}")  # Debug: Show content type
+        print(f"Response content length: {len(response.content)}")  # Debug: Show content length
+        print("Full response content:")  # Debug: Show full response
         print(response.content[0].text)
         
         # Process the response
@@ -83,6 +88,7 @@ Interview segment met {interviewee}:
         
         for line in response.content[0].text.split('\n'):
             line = line.strip()
+            print(f"Processing line: {line}")  # Debug: Show each line being processed
             if not line:
                 if current_statement:
                     # Create statement object

@@ -1,0 +1,153 @@
+{
+  "interviewee": "Erik",
+  "date": "2025-01-16T00:36:05.511074",
+  "raw_text": "Nog niet zo lang klant, het is nog even afwachten hoe het werkt. Complimenten voor de app en duidelijkheid voor kosten/vaste kosten verdeling. Dag van tevoren stroomkosten inzien is ook erg fijn. \n\nRichard vindt het overzicht eerlijk en vind dat een hele sterke optie. Omdat we dus ook het meest inzichtelijk zijn en dat is een van de redenen om over te gaan. Bij andere maatschappijen is het te onoverzichtelijk. \nDe 'eerlijke' terugleververgoeding is ook een van de hoofdredenen om over te gaan. Transparantie is ook een grote reden. \nNa aflopen vast contract gekeken naar behoefte en huis. \n23 zonnepanelen op het dak, 3 december een hybride warmtepomp geïnstalleerd\nRedelijk groot, vrijstaand, huis. incl vloerverwarming en all. \n\n\nZwager van Richard was voorloper van dynamisch contract. \n\nHij heeft via gaslicht.com vergelijken, maar kwam toch bij ons beter uit. \n\nOok met vrienden gepraat over warmtepomp, hij vindt de app handig en heeft ook een P1-meter via waar hij meer bewustwording en in controle zijn over de uitgave aan energie ondervindt. \n\nMensen die veel zekerheid willen, kiezen voor een vast contract. Mensen met dynamisch contract moeten accepteren dat het in de winter wat meer is en die kosten nivelleren erg dus dan is dan weer goed zo. \nMensen willen geen naheffingen aan het einde van het jaar, maar via de app van anwb energie kun je via de tussenstand zien of dat van toepassing is of niet. \n\nDoorsnee is vooral vast contract en niks van het onverwachtse. Ze willen weten waar ze aan toe zijn. \n\nMockup test:\nBij het zien van een bonus zou Richard er wel op klikken. Hij denkt dat een aanbevelingsprogramma op de site kenbaar moet worden gemaakt, vanuit daar moet het aanlokkelijk zijn op die knop te drukken. \nVoorbeelden voor bonus: Geldelijk gewin > een aantal dagen bv. een kostvrije dag/warmtebesparende maatregelen/ ledlampen > bespaarhulpjes tegen een gereduceerd tarief/ \nBlok 1 > spreekt aan. Mooi om te zien dat je een goede keuze hebt gemaakt als klant. Heel duidelijk statement. Geen probleem dat er namens de klant wordt gepraat. Het zijn gewoon feite en geen persoonlijke gegevens.\n\nRichard wil graag het voordeel 'sharen' en heeft liever 50/50 dan dat hij z'n buurman voordeel gaat geven. \nHij kan zich goed wat voorstellen bij ledenvoordeel. Duidelijkheid/voordelen/conformatie van juiste keuze maken. Zit ik wel bij het juist? Alles wat erbij zitten om extra voordelen te hebben, daar worden mensen door getriggerd. Richard is zelf lid en juicht extra bonus toe en hij denkt dat iemand die het niet is, het niet erg vindt dat die leden extra lid zijn. \nMaandelijks opzegbaar = voordeel\nAls het helemaal niet bevalt, dan is het maandelijks opzegbaar. Ook zo gezegd tegen vrienden\n\nMailing voor 'gratis stroom' is fijn. \n\nAuthenticiteit zou niet verloren gaan met bonus. Hij vindt dat het een eigen voordeel is en in zijn omgeving ook mensen die datzelfde beeld hebben. Dus hij ziet geen probleem in zo'n aanbevelingsbonus. ",
+  "statements": [
+    {
+      "text": "Erik voelt zich positief over de app en kostenverdeling",
+      "type": "voelt",
+      "source_text": "Erik voelt zich positief over de app en kostenverdeling",
+      "confidence": 0.9,
+      "metadata": {}
+    },
+    {
+      "text": "Erik zegt dat hij nog niet zo lang klant is",
+      "type": "zegt",
+      "source_text": "Erik zegt dat hij nog niet zo lang klant is",
+      "confidence": 1.0,
+      "metadata": {}
+    },
+    {
+      "text": "Erik denkt dat het overzicht eerlijk en sterk is",
+      "type": "denkt",
+      "source_text": "Erik denkt dat het overzicht eerlijk en sterk is",
+      "confidence": 1.0,
+      "metadata": {}
+    },
+    {
+      "text": "Erik doet aan energieopwekking met 23 zonnepanelen",
+      "type": "doet",
+      "source_text": "Erik doet aan energieopwekking met 23 zonnepanelen",
+      "confidence": 1.0,
+      "metadata": {}
+    },
+    {
+      "text": "Erik doet de verwarming met een hybride warmtepomp sinds 3 december",
+      "type": "doet",
+      "source_text": "Erik doet de verwarming met een hybride warmtepomp sinds 3 december",
+      "confidence": 1.0,
+      "metadata": {}
+    },
+    {
+      "text": "Erik doet vergelijkingen via gaslicht.com",
+      "type": "doet",
+      "source_text": "Erik doet vergelijkingen via gaslicht.com",
+      "confidence": 1.0,
+      "metadata": {}
+    },
+    {
+      "text": "Erik denkt dat transparantie een belangrijke reden is om over te stappen",
+      "type": "denkt",
+      "source_text": "Erik denkt dat transparantie een belangrijke reden is om over te stappen",
+      "confidence": 0.9,
+      "metadata": {}
+    },
+    {
+      "text": "Erik voelt meer controle door gebruik van de P1-meter",
+      "type": "voelt",
+      "source_text": "Erik voelt meer controle door gebruik van de P1-meter",
+      "confidence": 0.8,
+      "metadata": {}
+    },
+    {
+      "text": "Erik denkt dat mensen met een dynamisch contract moeten accepteren dat kosten in de winter hoger zijn",
+      "type": "denkt",
+      "source_text": "Erik denkt dat mensen met een dynamisch contract moeten accepteren dat kosten in de winter hoger zijn",
+      "confidence": 0.9,
+      "metadata": {}
+    },
+    {
+      "text": "Erik zegt dat hij in een groot vrijstaand huis woont met vloerverwarming",
+      "type": "zegt",
+      "source_text": "Erik zegt dat hij in een groot vrijstaand huis woont met vloerverwarming",
+      "confidence": 1.0,
+      "metadata": {}
+    },
+    {
+      "text": "Erik denkt dat een aanbevelingsprogramma goed zichtbaar op de site moet staan",
+      "type": "denkt",
+      "source_text": "Erik denkt dat een aanbevelingsprogramma goed zichtbaar op de site moet staan",
+      "confidence": 0.9,
+      "metadata": {}
+    },
+    {
+      "text": "Erik voelt zich aangesproken door een bonus systeem",
+      "type": "voelt",
+      "source_text": "Erik voelt zich aangesproken door een bonus systeem",
+      "confidence": 0.8,
+      "metadata": {}
+    },
+    {
+      "text": "Erik denkt dat een 50/50 verdeling van voordelen eerlijker is dan alleen de buurman voordeel geven",
+      "type": "denkt",
+      "source_text": "Erik denkt dat een 50/50 verdeling van voordelen eerlijker is dan alleen de buurman voordeel geven",
+      "confidence": 0.9,
+      "metadata": {}
+    },
+    {
+      "text": "Erik voelt zich positief over het concept van ledenvoordelen",
+      "type": "voelt",
+      "source_text": "Erik voelt zich positief over het concept van ledenvoordelen",
+      "confidence": 0.8,
+      "metadata": {}
+    },
+    {
+      "text": "Erik zegt zelf lid te zijn van de organisatie",
+      "type": "zegt",
+      "source_text": "Erik zegt zelf lid te zijn van de organisatie",
+      "confidence": 1.0,
+      "metadata": {}
+    },
+    {
+      "text": "Erik denkt dat niet-leden er geen probleem mee hebben dat leden extra voordelen krijgen",
+      "type": "denkt",
+      "source_text": "Erik denkt dat niet-leden er geen probleem mee hebben dat leden extra voordelen krijgen",
+      "confidence": 0.9,
+      "metadata": {}
+    },
+    {
+      "text": "Erik doet aanbevelingen aan vrienden over de maandelijkse opzegbaarheid",
+      "type": "doet",
+      "source_text": "Erik doet aanbevelingen aan vrienden over de maandelijkse opzegbaarheid",
+      "confidence": 1.0,
+      "metadata": {}
+    },
+    {
+      "text": "Erik voelt zich positief over mailings met 'gratis stroom' aanbiedingen",
+      "type": "voelt",
+      "source_text": "Erik voelt zich positief over mailings met 'gratis stroom' aanbiedingen",
+      "confidence": 0.8,
+      "metadata": {}
+    },
+    {
+      "text": "Erik denkt dat een aanbevelingsbonus niet ten koste gaat van authenticiteit",
+      "type": "denkt",
+      "source_text": "Erik denkt dat een aanbevelingsbonus niet ten koste gaat van authenticiteit",
+      "confidence": 1.0,
+      "metadata": {}
+    },
+    {
+      "text": "Erik zegt dat mensen in zijn omgeving dezelfde mening delen over bonussen",
+      "type": "zegt",
+      "source_text": "Erik zegt dat mensen in zijn omgeving dezelfde mening delen over bonussen",
+      "confidence": 0.9,
+      "metadata": {}
+    }
+  ],
+  "metadata": {
+    "filename": "erik_20250116_003605_510351.json",
+    "ready_for_analysis": false,
+    "created_at": "2025-01-16T00:36:05.510516"
+  },
+  "ready_for_analysis": false
+}
