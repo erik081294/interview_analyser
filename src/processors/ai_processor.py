@@ -18,8 +18,16 @@ try:
     os.environ["ANTHROPIC_API_KEY"] = ANTHROPIC_API_KEY
     logger.debug("Set API key in environment variables")
     
-    # Try to create client with minimal config
-    client = anthropic.Anthropic()
+    # Create base configuration
+    base_config = {
+        "api_key": ANTHROPIC_API_KEY,
+        "base_url": "https://api.anthropic.com",
+        "max_retries": 3,
+        "timeout": 30,
+    }
+    
+    # Try to create client with explicit configuration
+    client = anthropic.Anthropic(**base_config)
     logger.debug("Successfully created Anthropic client")
 except Exception as e:
     logger.error(f"Failed to initialize Anthropic client: {str(e)}")
