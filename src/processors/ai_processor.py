@@ -1,4 +1,4 @@
-from typing import List, Dict
+from typing import List, Dict, Optional
 import anthropic
 import os
 import logging
@@ -9,31 +9,33 @@ from ..config import ANTHROPIC_API_KEY, AI_MODEL
 logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger(__name__)
 
-# Initialize Anthropic client with detailed logging
-logger.debug("Starting Anthropic client initialization")
-logger.debug(f"Anthropic version: {anthropic.__version__}")
-logger.debug(f"API Key present: {bool(ANTHROPIC_API_KEY)}")
+class AnthropicClient:
+    _instance: Optional['AnthropicClient'] = None
+    _client: Optional[anthropic.Anthropic] = None
 
-try:
-    os.environ["ANTHROPIC_API_KEY"] = ANTHROPIC_API_KEY
-    logger.debug("Set API key in environment variables")
-    
-    # Create base configuration
-    base_config = {
-        "api_key": ANTHROPIC_API_KEY,
-        "base_url": "https://api.anthropic.com",
-        "max_retries": 3,
-        "timeout": 30,
-    }
-    
-    # Try to create client with explicit configuration
-    client = anthropic.Anthropic(**base_config)
-    logger.debug("Successfully created Anthropic client")
-except Exception as e:
-    logger.error(f"Failed to initialize Anthropic client: {str(e)}")
-    logger.error(f"Exception type: {type(e)}")
-    logger.error(f"Exception args: {e.args}")
-    raise
+    def __new__(cls):
+        if cls._instance is None:
+            cls._instance = super().__new__(cls)
+        return cls._instance
+
+    @property
+    def client(self) -> anthropic.Anthropic:
+        if self._client is None:
+            logger.debug("Initializing Anthropic client")
+            try:
+                # Set API key in environment
+                os.environ["ANTHROPIC_API_KEY"] = ANTHROPIC_API_KEY
+                
+                # Initialize client without any additional configuration
+                self._client = anthropic.Anthropic()
+                logger.debug("Successfully created Anthropic client")
+            except Exception as e:
+                logger.error(f"Failed to initialize Anthropic client: {str(e)}")
+                raise
+        return self._client
+
+# Create global client instance
+_anthropic_client = AnthropicClient()
 
 def analyze_text_segment(text: str, interviewee: str) -> List[Statement]:
     """Analyze a segment of text using Claude to extract statements."""
@@ -41,6 +43,9 @@ def analyze_text_segment(text: str, interviewee: str) -> List[Statement]:
     try:
         print(f"\n=== Analyzing text segment for {interviewee} ===")
         print(f"Text length: {len(text)}")
+        
+        # Get client instance only when needed
+        client = _anthropic_client.client
         
         response = client.messages.create(
             model="claude-3-5-sonnet-20241022",
