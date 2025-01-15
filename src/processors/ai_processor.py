@@ -1,5 +1,6 @@
 from typing import List, Dict, Optional
 import anthropic
+import httpx
 import os
 import logging
 from ..models import Statement, StatementType, Interview
@@ -9,33 +10,18 @@ from ..config import ANTHROPIC_API_KEY, AI_MODEL
 logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger(__name__)
 
-class AnthropicClient:
-    _instance: Optional['AnthropicClient'] = None
-    _client: Optional[anthropic.Anthropic] = None
+# Create HTTP client without proxy
+http_client = httpx.Client(
+    base_url="https://api.anthropic.com",
+    timeout=30.0,
+    follow_redirects=True
+)
 
-    def __new__(cls):
-        if cls._instance is None:
-            cls._instance = super().__new__(cls)
-        return cls._instance
-
-    @property
-    def client(self) -> anthropic.Anthropic:
-        if self._client is None:
-            logger.debug("Initializing Anthropic client")
-            try:
-                # Set API key in environment
-                os.environ["ANTHROPIC_API_KEY"] = ANTHROPIC_API_KEY
-                
-                # Initialize client without any additional configuration
-                self._client = anthropic.Anthropic()
-                logger.debug("Successfully created Anthropic client")
-            except Exception as e:
-                logger.error(f"Failed to initialize Anthropic client: {str(e)}")
-                raise
-        return self._client
-
-# Create global client instance
-_anthropic_client = AnthropicClient()
+# Initialize Anthropic client with custom HTTP client
+client = anthropic.Anthropic(
+    api_key=ANTHROPIC_API_KEY,
+    http_client=http_client
+)
 
 def analyze_text_segment(text: str, interviewee: str) -> List[Statement]:
     """Analyze a segment of text using Claude to extract statements."""
