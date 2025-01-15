@@ -1,12 +1,31 @@
 from typing import List, Dict
 import anthropic
 import os
+import logging
 from ..models import Statement, StatementType, Interview
 from ..config import ANTHROPIC_API_KEY, AI_MODEL
 
-# Initialize Anthropic client with minimal configuration
-os.environ["ANTHROPIC_API_KEY"] = ANTHROPIC_API_KEY
-client = anthropic.Anthropic()
+# Set up logging
+logging.basicConfig(level=logging.DEBUG)
+logger = logging.getLogger(__name__)
+
+# Initialize Anthropic client with detailed logging
+logger.debug("Starting Anthropic client initialization")
+logger.debug(f"Anthropic version: {anthropic.__version__}")
+logger.debug(f"API Key present: {bool(ANTHROPIC_API_KEY)}")
+
+try:
+    os.environ["ANTHROPIC_API_KEY"] = ANTHROPIC_API_KEY
+    logger.debug("Set API key in environment variables")
+    
+    # Try to create client with minimal config
+    client = anthropic.Anthropic()
+    logger.debug("Successfully created Anthropic client")
+except Exception as e:
+    logger.error(f"Failed to initialize Anthropic client: {str(e)}")
+    logger.error(f"Exception type: {type(e)}")
+    logger.error(f"Exception args: {e.args}")
+    raise
 
 def analyze_text_segment(text: str, interviewee: str) -> List[Statement]:
     """Analyze a segment of text using Claude to extract statements."""
