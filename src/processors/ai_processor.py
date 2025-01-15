@@ -1,10 +1,12 @@
 from typing import List, Dict
 import anthropic
+import os
 from ..models import Statement, StatementType, Interview
 from ..config import ANTHROPIC_API_KEY, AI_MODEL
 
-# Initialize Anthropic client with explicit API key
-client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
+# Initialize Anthropic client with minimal configuration
+os.environ["ANTHROPIC_API_KEY"] = ANTHROPIC_API_KEY
+client = anthropic.Anthropic()
 
 def analyze_text_segment(text: str, interviewee: str) -> List[Statement]:
     """Analyze a segment of text using Claude to extract statements."""
