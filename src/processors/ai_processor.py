@@ -1,27 +1,10 @@
-from typing import List, Dict, Optional
+from typing import List, Dict
 import anthropic
-import httpx
-import os
-import logging
 from ..models import Statement, StatementType, Interview
 from ..config import ANTHROPIC_API_KEY, AI_MODEL
 
-# Set up logging
-logging.basicConfig(level=logging.DEBUG)
-logger = logging.getLogger(__name__)
-
-# Create HTTP client without proxy
-http_client = httpx.Client(
-    base_url="https://api.anthropic.com",
-    timeout=30.0,
-    follow_redirects=True
-)
-
-# Initialize Anthropic client with custom HTTP client
-client = anthropic.Anthropic(
-    api_key=ANTHROPIC_API_KEY,
-    http_client=http_client
-)
+# Initialize Anthropic client
+client = anthropic.Anthropic()
 
 def analyze_text_segment(text: str, interviewee: str) -> List[Statement]:
     """Analyze a segment of text using Claude to extract statements."""
@@ -29,9 +12,6 @@ def analyze_text_segment(text: str, interviewee: str) -> List[Statement]:
     try:
         print(f"\n=== Analyzing text segment for {interviewee} ===")
         print(f"Text length: {len(text)}")
-        
-        # Get client instance only when needed
-        client = _anthropic_client.client
         
         response = client.messages.create(
             model="claude-3-5-sonnet-20241022",
@@ -71,7 +51,7 @@ Formuleer elke uitspraak in het exacte format: "{interviewee} [werkwoord] [state
 Voor elke relevante uitspraak, bepaal het type:
 - DENKT: "{interviewee} denkt/vindt/gelooft..." (voor meningen, overtuigingen, gedachten)
 - VOELT: "{interviewee} voelt/is/wordt..." (voor emoties, stemmingen, ervaringen)
-- DOET: "{interviewee} doet/maakt/gebruikt..." (voor acties, gedrag, handelingen)
+- DOET: "{interviewee} gaat/maakt/gebruikt..." (voor acties, gedrag, handelingen)
 - ZEGT: "{interviewee} zegt/vertelt/geeft aan..." (voor directe uitspraken, verklaringen)
 
 Geef voor elke uitspraak terug:

@@ -42,7 +42,4 @@ htmlcov/
 
 # Local development
 instance/
-.webassets-cache/
-
-# Streamlit secrets
-.streamlit/secrets.toml 
+.webassets-cache/ 
